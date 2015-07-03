@@ -19,8 +19,15 @@ end
 
 group :development, :test do
   gem 'byebug'
+  gem 'factory_girl_rails'
+  gem 'rspec-rails'
 end
 
+group :test do
+  gem 'database_cleaner'
+  gem 'faker'
+  gem 'simplecov', require: false
+end
 group :doc do
   gem 'sdoc', '~> 0.4.0'
 end
